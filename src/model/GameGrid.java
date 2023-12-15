@@ -19,7 +19,7 @@ import java.util.List;
 
 class GameGrid extends GridPane {
 
-    private final Button startStopButton; //class-level declaration: methods change it from stop to start and vice-versa
+    private final Button startStopButton; //методы изменяют его с stop на start и наоборот
     private Timeline gameTimeline;
     private ArrayList<CellButton> cellList;
 

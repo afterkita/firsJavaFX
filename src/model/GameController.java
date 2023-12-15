@@ -3,16 +3,16 @@ package model;
 import javafx.fxml.FXML;
 
 /**
- * Takes over from the Main class once the play button is clicked on the title screen
+ * Переходит к основному классу после нажатия кнопки воспроизведения на титульном экране
  */
 
 class GameController {
 
     /**
-     * Calls the GameGrid constructor, passing the size value from the main screen's grid size slider,
-     * and then assigns the GameGrid as the main scene's new root node.
+     * Вызывает конструктор игровой сетки, передавая значение размера из ползунка размера сетки на главном экране,
+     * а затем назначает игровую сетку в качестве нового root главной сцены.
      *
-     * @param size The dimensions of the grid.
+     * @param size размер поля.
      */
     @FXML
     static void initializeGame(int size) {
