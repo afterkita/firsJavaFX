@@ -11,21 +11,7 @@ import javafx.stage.StageStyle;
 
 import java.io.IOException;
 
-/**
- * The Game Of Life is a cellular automaton invented by the mathematician John Conway in 1970. This is a simple
- * implementation in Java using the JavaFX UI library.
- *
- * @author Al Smith   al@whitefootsmith.com
- * @see <a href=http://en.wikipedia.org/wiki/Conway%27s_Game_of_Life> Wikipedia.</a>
- * <p>
- * Because the Game is Turing-complete, there is no algorithm that can predict whether a given starting pattern
- * will run forever or eventually settle into a periodic steady state - this is a corollary of the "halting problem".
- * Have fun!
- */
-
-
 public class Main extends Application {
-
     private static final Parent root = new Parent() {
     };
     private static final Scene mainScene = new Scene(root);
@@ -52,8 +38,8 @@ public class Main extends Application {
     }
 
     /**
-     * Called when the Play button is pressed. Passes the value from the grid size slider to the GameController class,
-     * and resizes the main window based on the size of the CellButtons and the dimensions of the grid.
+     * Вызывается при нажатии кнопки воспроизведения. Передает значение из ползунка размера сетки в класс GameController
+     * и изменяет размер главного окна в зависимости от размера кнопок ячеек и размеров сетки
      */
     @FXML
     protected void startGame() {
@@ -61,10 +47,6 @@ public class Main extends Application {
         GameController.initializeGame((int) gridSizeSlider.getValue());
         gameStage.setMinHeight(gridSizeSlider.getValue() * CellButton.getCellSize() * 1.2);
         gameStage.setMinWidth(gridSizeSlider.getValue() * CellButton.getCellSize());
-//TODO: get device display area and set cell size/window size accordingly
-//TODO: migrate other classes to FXML and style with CSS
-//TODO: JavaDoc all classes/methods
 
     }
-
 }
