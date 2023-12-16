@@ -85,7 +85,7 @@ class CellButton extends Button implements Comparable<CellButton> {
                 neighbours.add(x + (gridSize * y));
             }
         }
-        neighbours.remove(4); //index 4 is the cell itself, which should not be counted.
+        neighbours.remove(4);
         return neighbours;
     }
 

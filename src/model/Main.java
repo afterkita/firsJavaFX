@@ -14,8 +14,8 @@ import java.io.IOException;
 public class Main extends Application {
     private static final Parent root = new Parent() {
     };
-    private static final Scene mainScene = new Scene(root);
     private static Stage gameStage = new Stage(StageStyle.DECORATED);
+    private static final Scene mainScene = new Scene(root);
     @FXML
     private Slider gridSizeSlider;
 
@@ -30,7 +30,7 @@ public class Main extends Application {
         mainScene.setRoot(titleRoot);
         gameStage = mainStage;
         gameStage.setResizable(true);
-        gameStage.setTitle("Conway's Game Of Life");
+        gameStage.setTitle("Conway's Game Of Life (remastered)");
         gameStage.setScene(mainScene);
         gameStage.show();
 

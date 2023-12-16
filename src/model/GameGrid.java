@@ -40,6 +40,7 @@ class GameGrid extends GridPane {
         startStopButton.setOnAction(value -> runGame());
         startStopButton.setPadding(new Insets(10));
 
+
         Button clearButton = new Button("Clear");
         clearButton.setOnAction(value -> clearAllCells());
         clearButton.setPadding(new Insets(10));
